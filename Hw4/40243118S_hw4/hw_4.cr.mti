@@ -1,0 +1,11 @@
+C:/Users/wang/OneDrive/106-1/VLSI/Hw4/project/up_down_counter.vhd {1 {vcom -work work -2002 -explicit C:/Users/wang/OneDrive/106-1/VLSI/Hw4/project/up_down_counter.vhd
+Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package numeric_std
+-- Compiling entity up_down_counter
+-- Compiling architecture up_down_counter_arch of up_down_counter
+
+} {} {}}

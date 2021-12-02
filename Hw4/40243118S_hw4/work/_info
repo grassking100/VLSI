@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\wang\OneDrive
+Etest_bench
+Z0 w1515171274
+Z1 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z4 DPx4 ieee 16 std_logic_textio 0 22 8ONYdGiICLK<GeVc1o<IF0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z6 DPx3 std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
+Z7 dC:\Users\wang\OneDrive\106-1\VLSI\Hw4\project
+Z8 8C:/Users/wang/OneDrive/106-1/VLSI/Hw4/project/test_bench.vhd
+Z9 FC:/Users/wang/OneDrive/106-1/VLSI/Hw4/project/test_bench.vhd
+l0
+L9
+Vco9PgUASeD:UXfT7OB7P73
+!s100 :HhEjfJb`Ndo6^iC8PI2^0
+Z10 OV;C;6.6d;45
+32
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+Atest_bench_arch
+R1
+R2
+R3
+R4
+R5
+R6
+Z13 DEx4 work 10 test_bench 0 22 co9PgUASeD:UXfT7OB7P73
+l25
+L13
+V]aJIIVB80@4EC5ZZgBome1
+!s100 5F@m[3UXBYmX=kTVUoCM[3
+R10
+32
+Z14 Mx6 3 std 6 textio
+Z15 Mx5 4 ieee 14 std_logic_1164
+Z16 Mx4 4 ieee 16 std_logic_textio
+Z17 Mx3 4 ieee 18 std_logic_unsigned
+Z18 Mx2 4 ieee 15 std_logic_arith
+Z19 Mx1 4 ieee 11 numeric_std
+R11
+R12
+Eup_down_counter
+Z20 w1514798860
+R1
+R2
+R3
+R5
+R7
+Z21 8C:/Users/wang/OneDrive/106-1/VLSI/Hw4/project/up_down_counter.vhd
+Z22 FC:/Users/wang/OneDrive/106-1/VLSI/Hw4/project/up_down_counter.vhd
+l0
+L5
+V1P>gELF6aogFI6WS09iGI1
+R10
+32
+R11
+R12
+!s100 mJLOml^U[]J@]YCGl0_WM3
+Aup_down_counter_arch
+R1
+R2
+R3
+R5
+DEx4 work 15 up_down_counter 0 22 1P>gELF6aogFI6WS09iGI1
+l14
+L12
+VFMmcQ3LFanP95PPd7U1f01
+R10
+32
+Mx4 4 ieee 14 std_logic_1164
+R17
+R18
+R19
+R11
+R12
+!s100 OIK;JJa1g=FAQYBfSQPJE2

@@ -1,0 +1,249 @@
+Simulator report for up_down_counter
+Mon Jan 01 15:51:51 2018
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 54 nodes     ;
+; Simulation Coverage         ;      66.15 % ;
+; Total Number of Transitions ; 1182         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                               ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+; Option                                                                                     ; Setting             ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+; Simulation mode                                                                            ; Timing              ; Timing        ;
+; Start time                                                                                 ; 0 ns                ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                ;               ;
+; Vector input source                                                                        ; up_down_counter.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                  ; On            ;
+; Check outputs                                                                              ; Off                 ; Off           ;
+; Report simulation coverage                                                                 ; On                  ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                  ; On            ;
+; Display missing 1-value coverage report                                                    ; On                  ; On            ;
+; Display missing 0-value coverage report                                                    ; On                  ; On            ;
+; Detect setup and hold time violations                                                      ; Off                 ; Off           ;
+; Detect glitches                                                                            ; Off                 ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                 ; Off           ;
+; Generate Signal Activity File                                                              ; Off                 ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                 ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                 ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                  ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE          ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                 ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                 ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      66.15 % ;
+; Total nodes checked                                 ; 54           ;
+; Total output ports checked                          ; 65           ;
+; Total output ports with complete 1/0-value coverage ; 43           ;
+; Total output ports with no 1/0-value coverage       ; 22           ;
+; Total output ports with no 1-value coverage         ; 22           ;
+; Total output ports with no 0-value coverage         ; 22           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                      ;
++------------------------------+--------------------------------+------------------+
+; Node Name                    ; Output Port Name               ; Output Port Type ;
++------------------------------+--------------------------------+------------------+
+; |up_down_counter|memory[0]   ; |up_down_counter|memory[0]     ; regout           ;
+; |up_down_counter|memory[1]   ; |up_down_counter|memory[1]     ; regout           ;
+; |up_down_counter|memory[2]   ; |up_down_counter|memory[2]     ; regout           ;
+; |up_down_counter|memory[3]   ; |up_down_counter|memory[3]     ; regout           ;
+; |up_down_counter|memory[4]   ; |up_down_counter|memory[4]     ; regout           ;
+; |up_down_counter|memory[5]   ; |up_down_counter|memory[5]     ; regout           ;
+; |up_down_counter|memory[6]   ; |up_down_counter|memory[6]     ; regout           ;
+; |up_down_counter|memory[7]   ; |up_down_counter|memory[7]     ; regout           ;
+; |up_down_counter|Add0~2      ; |up_down_counter|Add0~2        ; sumout           ;
+; |up_down_counter|Add0~2      ; |up_down_counter|Add0~3        ; cout             ;
+; |up_down_counter|Add0~6      ; |up_down_counter|Add0~6        ; sumout           ;
+; |up_down_counter|Add0~6      ; |up_down_counter|Add0~7        ; cout             ;
+; |up_down_counter|Add0~10     ; |up_down_counter|Add0~10       ; sumout           ;
+; |up_down_counter|Add0~10     ; |up_down_counter|Add0~11       ; cout             ;
+; |up_down_counter|Add0~14     ; |up_down_counter|Add0~14       ; sumout           ;
+; |up_down_counter|Add0~14     ; |up_down_counter|Add0~15       ; cout             ;
+; |up_down_counter|Add0~18     ; |up_down_counter|Add0~18       ; sumout           ;
+; |up_down_counter|Add0~18     ; |up_down_counter|Add0~19       ; cout             ;
+; |up_down_counter|Add0~22     ; |up_down_counter|Add0~22       ; sumout           ;
+; |up_down_counter|Add0~22     ; |up_down_counter|Add0~23       ; cout             ;
+; |up_down_counter|Add0~26     ; |up_down_counter|Add0~26       ; sumout           ;
+; |up_down_counter|Add0~26     ; |up_down_counter|Add0~27       ; cout             ;
+; |up_down_counter|Add0~30     ; |up_down_counter|Add0~30       ; sumout           ;
+; |up_down_counter|Add0~30     ; |up_down_counter|Add0~31       ; cout             ;
+; |up_down_counter|Add0~34     ; |up_down_counter|Add0~35       ; cout             ;
+; |up_down_counter|Add0~38     ; |up_down_counter|Add0~38       ; sumout           ;
+; |up_down_counter|Add0~38     ; |up_down_counter|Add0~39       ; cout             ;
+; |up_down_counter|Add0~42     ; |up_down_counter|Add0~43       ; cout             ;
+; |up_down_counter|dout[0]     ; |up_down_counter|dout[0]       ; padio            ;
+; |up_down_counter|dout[1]     ; |up_down_counter|dout[1]       ; padio            ;
+; |up_down_counter|dout[2]     ; |up_down_counter|dout[2]       ; padio            ;
+; |up_down_counter|dout[3]     ; |up_down_counter|dout[3]       ; padio            ;
+; |up_down_counter|dout[4]     ; |up_down_counter|dout[4]       ; padio            ;
+; |up_down_counter|dout[5]     ; |up_down_counter|dout[5]       ; padio            ;
+; |up_down_counter|dout[6]     ; |up_down_counter|dout[6]       ; padio            ;
+; |up_down_counter|dout[7]     ; |up_down_counter|dout[7]       ; padio            ;
+; |up_down_counter|clk         ; |up_down_counter|clk~corein    ; combout          ;
+; |up_down_counter|clr         ; |up_down_counter|clr~corein    ; combout          ;
+; |up_down_counter|ld          ; |up_down_counter|ld~corein     ; combout          ;
+; |up_down_counter|up_dn       ; |up_down_counter|up_dn~corein  ; combout          ;
+; |up_down_counter|din[7]      ; |up_down_counter|din[7]~corein ; combout          ;
+; |up_down_counter|clk~clkctrl ; |up_down_counter|clk~clkctrl   ; outclk           ;
+; |up_down_counter|clr~clkctrl ; |up_down_counter|clr~clkctrl   ; outclk           ;
++------------------------------+--------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                         ;
++-----------------------------+---------------------------------+------------------+
+; Node Name                   ; Output Port Name                ; Output Port Type ;
++-----------------------------+---------------------------------+------------------+
+; |up_down_counter|memory[8]  ; |up_down_counter|memory[8]      ; regout           ;
+; |up_down_counter|memory[9]  ; |up_down_counter|memory[9]      ; regout           ;
+; |up_down_counter|memory[10] ; |up_down_counter|memory[10]     ; regout           ;
+; |up_down_counter|memory[11] ; |up_down_counter|memory[11]     ; regout           ;
+; |up_down_counter|Add0~34    ; |up_down_counter|Add0~34        ; sumout           ;
+; |up_down_counter|Add0~42    ; |up_down_counter|Add0~42        ; sumout           ;
+; |up_down_counter|Add0~46    ; |up_down_counter|Add0~46        ; sumout           ;
+; |up_down_counter|dout[8]    ; |up_down_counter|dout[8]        ; padio            ;
+; |up_down_counter|dout[9]    ; |up_down_counter|dout[9]        ; padio            ;
+; |up_down_counter|dout[10]   ; |up_down_counter|dout[10]       ; padio            ;
+; |up_down_counter|dout[11]   ; |up_down_counter|dout[11]       ; padio            ;
+; |up_down_counter|din[0]     ; |up_down_counter|din[0]~corein  ; combout          ;
+; |up_down_counter|din[1]     ; |up_down_counter|din[1]~corein  ; combout          ;
+; |up_down_counter|din[2]     ; |up_down_counter|din[2]~corein  ; combout          ;
+; |up_down_counter|din[3]     ; |up_down_counter|din[3]~corein  ; combout          ;
+; |up_down_counter|din[4]     ; |up_down_counter|din[4]~corein  ; combout          ;
+; |up_down_counter|din[5]     ; |up_down_counter|din[5]~corein  ; combout          ;
+; |up_down_counter|din[6]     ; |up_down_counter|din[6]~corein  ; combout          ;
+; |up_down_counter|din[8]     ; |up_down_counter|din[8]~corein  ; combout          ;
+; |up_down_counter|din[9]     ; |up_down_counter|din[9]~corein  ; combout          ;
+; |up_down_counter|din[10]    ; |up_down_counter|din[10]~corein ; combout          ;
+; |up_down_counter|din[11]    ; |up_down_counter|din[11]~corein ; combout          ;
++-----------------------------+---------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                         ;
++-----------------------------+---------------------------------+------------------+
+; Node Name                   ; Output Port Name                ; Output Port Type ;
++-----------------------------+---------------------------------+------------------+
+; |up_down_counter|memory[8]  ; |up_down_counter|memory[8]      ; regout           ;
+; |up_down_counter|memory[9]  ; |up_down_counter|memory[9]      ; regout           ;
+; |up_down_counter|memory[10] ; |up_down_counter|memory[10]     ; regout           ;
+; |up_down_counter|memory[11] ; |up_down_counter|memory[11]     ; regout           ;
+; |up_down_counter|Add0~34    ; |up_down_counter|Add0~34        ; sumout           ;
+; |up_down_counter|Add0~42    ; |up_down_counter|Add0~42        ; sumout           ;
+; |up_down_counter|Add0~46    ; |up_down_counter|Add0~46        ; sumout           ;
+; |up_down_counter|dout[8]    ; |up_down_counter|dout[8]        ; padio            ;
+; |up_down_counter|dout[9]    ; |up_down_counter|dout[9]        ; padio            ;
+; |up_down_counter|dout[10]   ; |up_down_counter|dout[10]       ; padio            ;
+; |up_down_counter|dout[11]   ; |up_down_counter|dout[11]       ; padio            ;
+; |up_down_counter|din[0]     ; |up_down_counter|din[0]~corein  ; combout          ;
+; |up_down_counter|din[1]     ; |up_down_counter|din[1]~corein  ; combout          ;
+; |up_down_counter|din[2]     ; |up_down_counter|din[2]~corein  ; combout          ;
+; |up_down_counter|din[3]     ; |up_down_counter|din[3]~corein  ; combout          ;
+; |up_down_counter|din[4]     ; |up_down_counter|din[4]~corein  ; combout          ;
+; |up_down_counter|din[5]     ; |up_down_counter|din[5]~corein  ; combout          ;
+; |up_down_counter|din[6]     ; |up_down_counter|din[6]~corein  ; combout          ;
+; |up_down_counter|din[8]     ; |up_down_counter|din[8]~corein  ; combout          ;
+; |up_down_counter|din[9]     ; |up_down_counter|din[9]~corein  ; combout          ;
+; |up_down_counter|din[10]    ; |up_down_counter|din[10]~corein ; combout          ;
+; |up_down_counter|din[11]    ; |up_down_counter|din[11]~corein ; combout          ;
++-----------------------------+---------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Jan 01 15:51:50 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Hw4 -c up_down_counter
+Info: Using vector source file "C:/Users/wang/OneDrive/106-1/VLSI/Hw4/project/up_down_counter.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      66.15 %
+Info: Number of transitions in simulation is 1182
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 177 megabytes
+    Info: Processing ended: Mon Jan 01 15:51:51 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

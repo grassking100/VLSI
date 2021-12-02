@@ -1,0 +1,263 @@
+Simulator report for Hw1
+Fri Nov 03 23:16:14 2017
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 84 nodes     ;
+; Simulation Coverage         ;      91.58 % ;
+; Total Number of Transitions ; 556          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                            ;
++--------------------------------------------------------------------------------------------+------------------+---------------+
+; Option                                                                                     ; Setting          ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------+---------------+
+; Simulation mode                                                                            ; Timing           ; Timing        ;
+; Start time                                                                                 ; 0 ns             ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF             ;               ;
+; Vector input source                                                                        ; Hw1_my_value.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On               ; On            ;
+; Check outputs                                                                              ; Off              ; Off           ;
+; Report simulation coverage                                                                 ; On               ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On               ; On            ;
+; Display missing 1-value coverage report                                                    ; On               ; On            ;
+; Display missing 0-value coverage report                                                    ; On               ; On            ;
+; Detect setup and hold time violations                                                      ; Off              ; Off           ;
+; Detect glitches                                                                            ; Off              ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off              ; Off           ;
+; Generate Signal Activity File                                                              ; Off              ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off              ; Off           ;
+; Group bus channels in simulation results                                                   ; Off              ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On               ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE       ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off              ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off              ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto             ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      91.58 % ;
+; Total nodes checked                                 ; 84           ;
+; Total output ports checked                          ; 95           ;
+; Total output ports with complete 1/0-value coverage ; 87           ;
+; Total output ports with no 1/0-value coverage       ; 6            ;
+; Total output ports with no 1-value coverage         ; 8            ;
+; Total output ports with no 0-value coverage         ; 6            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                                                                  ;
++-------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                           ; Output Port Name                                                                                                                    ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |Hw1|Add0~1                                                                                                                         ; |Hw1|Add0~1                                                                                                                         ; sumout           ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_28h:auto_generated|op_1~1                       ; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_28h:auto_generated|op_1~1                       ; sumout           ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_28h:auto_generated|op_1~1                       ; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_28h:auto_generated|op_1~2                       ; cout             ;
+; |Hw1|Add0~5                                                                                                                         ; |Hw1|Add0~5                                                                                                                         ; sumout           ;
+; |Hw1|Add0~5                                                                                                                         ; |Hw1|Add0~6                                                                                                                         ; cout             ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_28h:auto_generated|op_1~5                       ; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_28h:auto_generated|op_1~5                       ; sumout           ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_28h:auto_generated|op_1~5                       ; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_28h:auto_generated|op_1~6                       ; cout             ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_38h:auto_generated|op_1~1  ; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_38h:auto_generated|op_1~1  ; sumout           ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_38h:auto_generated|op_1~1  ; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_38h:auto_generated|op_1~2  ; cout             ;
+; |Hw1|Add0~9                                                                                                                         ; |Hw1|Add0~9                                                                                                                         ; sumout           ;
+; |Hw1|Add0~9                                                                                                                         ; |Hw1|Add0~10                                                                                                                        ; cout             ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_28h:auto_generated|op_1~9                       ; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_28h:auto_generated|op_1~9                       ; sumout           ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_28h:auto_generated|op_1~9                       ; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_28h:auto_generated|op_1~10                      ; cout             ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_38h:auto_generated|op_1~5  ; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_38h:auto_generated|op_1~5  ; sumout           ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_38h:auto_generated|op_1~5  ; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_38h:auto_generated|op_1~6  ; cout             ;
+; |Hw1|Add0~13                                                                                                                        ; |Hw1|Add0~13                                                                                                                        ; sumout           ;
+; |Hw1|Add0~13                                                                                                                        ; |Hw1|Add0~14                                                                                                                        ; cout             ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_28h:auto_generated|op_1~13                      ; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_28h:auto_generated|op_1~13                      ; sumout           ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_38h:auto_generated|op_1~9  ; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_38h:auto_generated|op_1~9  ; sumout           ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_38h:auto_generated|op_1~9  ; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_38h:auto_generated|op_1~10 ; cout             ;
+; |Hw1|Add0~17                                                                                                                        ; |Hw1|Add0~17                                                                                                                        ; sumout           ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_38h:auto_generated|op_1~13 ; |Hw1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_38h:auto_generated|op_1~13 ; sumout           ;
+; |Hw1|Add0~21                                                                                                                        ; |Hw1|Add0~21                                                                                                                        ; sumout           ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[0][0]                                                                           ; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[0][0]                                                                           ; combout          ;
+; |Hw1|Equal0~0                                                                                                                       ; |Hw1|Equal0~0                                                                                                                       ; combout          ;
+; |Hw1|LessThan0~0                                                                                                                    ; |Hw1|LessThan0~0                                                                                                                    ; combout          ;
+; |Hw1|LessThan0~1                                                                                                                    ; |Hw1|LessThan0~1                                                                                                                    ; combout          ;
+; |Hw1|LessThan0~2                                                                                                                    ; |Hw1|LessThan0~2                                                                                                                    ; combout          ;
+; |Hw1|output~24                                                                                                                      ; |Hw1|output~24                                                                                                                      ; combout          ;
+; |Hw1|Equal1~0                                                                                                                       ; |Hw1|Equal1~0                                                                                                                       ; combout          ;
+; |Hw1|output~25                                                                                                                      ; |Hw1|output~25                                                                                                                      ; combout          ;
+; |Hw1|output~26                                                                                                                      ; |Hw1|output~26                                                                                                                      ; combout          ;
+; |Hw1|Y~18                                                                                                                           ; |Hw1|Y~18                                                                                                                           ; combout          ;
+; |Hw1|output~27                                                                                                                      ; |Hw1|output~27                                                                                                                      ; combout          ;
+; |Hw1|output~28                                                                                                                      ; |Hw1|output~28                                                                                                                      ; combout          ;
+; |Hw1|output~29                                                                                                                      ; |Hw1|output~29                                                                                                                      ; combout          ;
+; |Hw1|Y~19                                                                                                                           ; |Hw1|Y~19                                                                                                                           ; combout          ;
+; |Hw1|Y~20                                                                                                                           ; |Hw1|Y~20                                                                                                                           ; combout          ;
+; |Hw1|Y~21                                                                                                                           ; |Hw1|Y~21                                                                                                                           ; combout          ;
+; |Hw1|Y~22                                                                                                                           ; |Hw1|Y~22                                                                                                                           ; combout          ;
+; |Hw1|Y~23                                                                                                                           ; |Hw1|Y~23                                                                                                                           ; combout          ;
+; |Hw1|Y~24                                                                                                                           ; |Hw1|Y~24                                                                                                                           ; combout          ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[1][1]                                                                           ; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[1][1]                                                                           ; combout          ;
+; |Hw1|Y~25                                                                                                                           ; |Hw1|Y~25                                                                                                                           ; combout          ;
+; |Hw1|Y~26                                                                                                                           ; |Hw1|Y~26                                                                                                                           ; combout          ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[2][2]                                                                           ; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[2][2]                                                                           ; combout          ;
+; |Hw1|Y~27                                                                                                                           ; |Hw1|Y~27                                                                                                                           ; combout          ;
+; |Hw1|Y~28                                                                                                                           ; |Hw1|Y~28                                                                                                                           ; combout          ;
+; |Hw1|Y~29                                                                                                                           ; |Hw1|Y~29                                                                                                                           ; combout          ;
+; |Hw1|Y~30                                                                                                                           ; |Hw1|Y~30                                                                                                                           ; combout          ;
+; |Hw1|Y~31                                                                                                                           ; |Hw1|Y~31                                                                                                                           ; combout          ;
+; |Hw1|Y~33                                                                                                                           ; |Hw1|Y~33                                                                                                                           ; combout          ;
+; |Hw1|Y~34                                                                                                                           ; |Hw1|Y~34                                                                                                                           ; combout          ;
+; |Hw1|Y~36                                                                                                                           ; |Hw1|Y~36                                                                                                                           ; combout          ;
+; |Hw1|Y~37                                                                                                                           ; |Hw1|Y~37                                                                                                                           ; combout          ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[0][1]                                                                           ; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[0][1]                                                                           ; combout          ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[1][0]                                                                           ; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[1][0]                                                                           ; combout          ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[0][2]                                                                           ; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[0][2]                                                                           ; combout          ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[2][0]                                                                           ; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[2][0]                                                                           ; combout          ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[1][2]                                                                           ; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[1][2]                                                                           ; combout          ;
+; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[2][1]                                                                           ; |Hw1|lpm_mult:Mult0|multcore:mult_core|decoder_node[2][1]                                                                           ; combout          ;
+; |Hw1|output~30                                                                                                                      ; |Hw1|output~30                                                                                                                      ; combout          ;
+; |Hw1|output~31                                                                                                                      ; |Hw1|output~31                                                                                                                      ; combout          ;
+; |Hw1|output~32                                                                                                                      ; |Hw1|output~32                                                                                                                      ; combout          ;
+; |Hw1|output~33                                                                                                                      ; |Hw1|output~33                                                                                                                      ; combout          ;
+; |Hw1|Y[0]                                                                                                                           ; |Hw1|Y[0]                                                                                                                           ; padio            ;
+; |Hw1|Y[1]                                                                                                                           ; |Hw1|Y[1]                                                                                                                           ; padio            ;
+; |Hw1|Y[2]                                                                                                                           ; |Hw1|Y[2]                                                                                                                           ; padio            ;
+; |Hw1|Y[3]                                                                                                                           ; |Hw1|Y[3]                                                                                                                           ; padio            ;
+; |Hw1|Y[4]                                                                                                                           ; |Hw1|Y[4]                                                                                                                           ; padio            ;
+; |Hw1|Y[5]                                                                                                                           ; |Hw1|Y[5]                                                                                                                           ; padio            ;
+; |Hw1|A[0]                                                                                                                           ; |Hw1|A[0]~corein                                                                                                                    ; combout          ;
+; |Hw1|B[0]                                                                                                                           ; |Hw1|B[0]~corein                                                                                                                    ; combout          ;
+; |Hw1|S[0]                                                                                                                           ; |Hw1|S[0]~corein                                                                                                                    ; combout          ;
+; |Hw1|S[1]                                                                                                                           ; |Hw1|S[1]~corein                                                                                                                    ; combout          ;
+; |Hw1|A[3]                                                                                                                           ; |Hw1|A[3]~corein                                                                                                                    ; combout          ;
+; |Hw1|B[3]                                                                                                                           ; |Hw1|B[3]~corein                                                                                                                    ; combout          ;
+; |Hw1|A[5]                                                                                                                           ; |Hw1|A[5]~corein                                                                                                                    ; combout          ;
+; |Hw1|B[5]                                                                                                                           ; |Hw1|B[5]~corein                                                                                                                    ; combout          ;
+; |Hw1|B[4]                                                                                                                           ; |Hw1|B[4]~corein                                                                                                                    ; combout          ;
+; |Hw1|B[1]                                                                                                                           ; |Hw1|B[1]~corein                                                                                                                    ; combout          ;
+; |Hw1|A[1]                                                                                                                           ; |Hw1|A[1]~corein                                                                                                                    ; combout          ;
+; |Hw1|A[2]                                                                                                                           ; |Hw1|A[2]~corein                                                                                                                    ; combout          ;
+; |Hw1|B[2]                                                                                                                           ; |Hw1|B[2]~corein                                                                                                                    ; combout          ;
+; |Hw1|C[1]                                                                                                                           ; |Hw1|C[1]~corein                                                                                                                    ; combout          ;
+; |Hw1|C[2]                                                                                                                           ; |Hw1|C[2]~corein                                                                                                                    ; combout          ;
+; |Hw1|C[3]                                                                                                                           ; |Hw1|C[3]~corein                                                                                                                    ; combout          ;
++-------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------+
+; Missing 1-Value Coverage                           ;
++--------------+------------------+------------------+
+; Node Name    ; Output Port Name ; Output Port Type ;
++--------------+------------------+------------------+
+; |Hw1|Add0~1  ; |Hw1|Add0~2      ; cout             ;
+; |Hw1|Add0~17 ; |Hw1|Add0~18     ; cout             ;
+; |Hw1|Y~32    ; |Hw1|Y~32        ; combout          ;
+; |Hw1|Y~35    ; |Hw1|Y~35        ; combout          ;
+; |Hw1|C[0]    ; |Hw1|C[0]~corein ; combout          ;
+; |Hw1|A[4]    ; |Hw1|A[4]~corein ; combout          ;
+; |Hw1|C[5]    ; |Hw1|C[5]~corein ; combout          ;
+; |Hw1|C[4]    ; |Hw1|C[4]~corein ; combout          ;
++--------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------+
+; Missing 0-Value Coverage                           ;
++--------------+------------------+------------------+
+; Node Name    ; Output Port Name ; Output Port Type ;
++--------------+------------------+------------------+
+; |Hw1|Add0~1  ; |Hw1|Add0~2      ; cout             ;
+; |Hw1|Add0~17 ; |Hw1|Add0~18     ; cout             ;
+; |Hw1|Y~32    ; |Hw1|Y~32        ; combout          ;
+; |Hw1|Y~35    ; |Hw1|Y~35        ; combout          ;
+; |Hw1|C[0]    ; |Hw1|C[0]~corein ; combout          ;
+; |Hw1|C[4]    ; |Hw1|C[4]~corein ; combout          ;
++--------------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Nov 03 23:16:14 2017
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Hw1 -c Hw1
+Info: Using vector source file "C:/Users/wang/OneDrive/106-1/VLSI/Hw1/code/Hw1_my_value.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      91.58 %
+Info: Number of transitions in simulation is 556
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 177 megabytes
+    Info: Processing ended: Fri Nov 03 23:16:14 2017
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

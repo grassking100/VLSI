@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="my_memory">
+		<CBX_INST_ENTRY INSTANCE_NAME="|memory|scfifo:scfifo_component" CBX_FILE_NAME="scfifo_mg31.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

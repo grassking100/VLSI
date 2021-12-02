@@ -1,0 +1,13 @@
+|traffic_light_controller
+S1 => next_state.state_5.DATAB
+S1 => Selector0.IN2
+S2 => next_state.state_10.DATAB
+S2 => Selector1.IN2
+R1 <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Y1 <= Y1~0.DB_MAX_OUTPUT_PORT_TYPE
+G1 <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+R2 <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= Y2~0.DB_MAX_OUTPUT_PORT_TYPE
+G2 <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+
+

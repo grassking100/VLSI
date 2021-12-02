@@ -1,0 +1,216 @@
+Simulator report for universal_shift_register
+Fri Jan 12 20:35:09 2018
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 53 nodes     ;
+; Simulation Coverage         ;      96.23 % ;
+; Total Number of Transitions ; 582          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      96.23 % ;
+; Total nodes checked                                 ; 53           ;
+; Total output ports checked                          ; 53           ;
+; Total output ports with complete 1/0-value coverage ; 51           ;
+; Total output ports with no 1/0-value coverage       ; 2            ;
+; Total output ports with no 1-value coverage         ; 2            ;
+; Total output ports with no 0-value coverage         ; 2            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                 ;
++--------------------------------------------+---------------------------------------------+------------------+
+; Node Name                                  ; Output Port Name                            ; Output Port Type ;
++--------------------------------------------+---------------------------------------------+------------------+
+; |universal_shift_register|MSB_out~reg0     ; |universal_shift_register|MSB_out~reg0      ; regout           ;
+; |universal_shift_register|LSB_out~reg0     ; |universal_shift_register|LSB_out~reg0      ; regout           ;
+; |universal_shift_register|Data_out[0]~reg0 ; |universal_shift_register|Data_out[0]~reg0  ; regout           ;
+; |universal_shift_register|Data_out[1]~reg0 ; |universal_shift_register|Data_out[1]~reg0  ; regout           ;
+; |universal_shift_register|Data_out[2]~reg0 ; |universal_shift_register|Data_out[2]~reg0  ; regout           ;
+; |universal_shift_register|Data_out[3]~reg0 ; |universal_shift_register|Data_out[3]~reg0  ; regout           ;
+; |universal_shift_register|Data_out[4]~reg0 ; |universal_shift_register|Data_out[4]~reg0  ; regout           ;
+; |universal_shift_register|Data_out[5]~reg0 ; |universal_shift_register|Data_out[5]~reg0  ; regout           ;
+; |universal_shift_register|Data_out[6]~reg0 ; |universal_shift_register|Data_out[6]~reg0  ; regout           ;
+; |universal_shift_register|Data_out[7]~reg0 ; |universal_shift_register|Data_out[7]~reg0  ; regout           ;
+; |universal_shift_register|Data_out[2]~8    ; |universal_shift_register|Data_out[2]~8     ; combout          ;
+; |universal_shift_register|Data_out[2]~9    ; |universal_shift_register|Data_out[2]~9     ; combout          ;
+; |universal_shift_register|Data_out~10      ; |universal_shift_register|Data_out~10       ; combout          ;
+; |universal_shift_register|Data_out[2]~11   ; |universal_shift_register|Data_out[2]~11    ; combout          ;
+; |universal_shift_register|Data_out~12      ; |universal_shift_register|Data_out~12       ; combout          ;
+; |universal_shift_register|Data_out~13      ; |universal_shift_register|Data_out~13       ; combout          ;
+; |universal_shift_register|Data_out~14      ; |universal_shift_register|Data_out~14       ; combout          ;
+; |universal_shift_register|Data_out~15      ; |universal_shift_register|Data_out~15       ; combout          ;
+; |universal_shift_register|Mux0~0           ; |universal_shift_register|Mux0~0            ; combout          ;
+; |universal_shift_register|Mux0~1           ; |universal_shift_register|Mux0~1            ; combout          ;
+; |universal_shift_register|Data_out~16      ; |universal_shift_register|Data_out~16       ; combout          ;
+; |universal_shift_register|Data_out~17      ; |universal_shift_register|Data_out~17       ; combout          ;
+; |universal_shift_register|Data_out~18      ; |universal_shift_register|Data_out~18       ; combout          ;
+; |universal_shift_register|Data_out~19      ; |universal_shift_register|Data_out~19       ; combout          ;
+; |universal_shift_register|Mux7~0           ; |universal_shift_register|Mux7~0            ; combout          ;
+; |universal_shift_register|Mux7~1           ; |universal_shift_register|Mux7~1            ; combout          ;
+; |universal_shift_register|Data_out~20      ; |universal_shift_register|Data_out~20       ; combout          ;
+; |universal_shift_register|MSB_out          ; |universal_shift_register|MSB_out           ; padio            ;
+; |universal_shift_register|LSB_out          ; |universal_shift_register|LSB_out           ; padio            ;
+; |universal_shift_register|Data_out[0]      ; |universal_shift_register|Data_out[0]       ; padio            ;
+; |universal_shift_register|Data_out[1]      ; |universal_shift_register|Data_out[1]       ; padio            ;
+; |universal_shift_register|Data_out[2]      ; |universal_shift_register|Data_out[2]       ; padio            ;
+; |universal_shift_register|Data_out[3]      ; |universal_shift_register|Data_out[3]       ; padio            ;
+; |universal_shift_register|Data_out[4]      ; |universal_shift_register|Data_out[4]       ; padio            ;
+; |universal_shift_register|Data_out[5]      ; |universal_shift_register|Data_out[5]       ; padio            ;
+; |universal_shift_register|Data_out[6]      ; |universal_shift_register|Data_out[6]       ; padio            ;
+; |universal_shift_register|Data_out[7]      ; |universal_shift_register|Data_out[7]       ; padio            ;
+; |universal_shift_register|clk              ; |universal_shift_register|clk~corein        ; combout          ;
+; |universal_shift_register|rst              ; |universal_shift_register|rst~corein        ; combout          ;
+; |universal_shift_register|s3               ; |universal_shift_register|s3~corein         ; combout          ;
+; |universal_shift_register|Data_in[0]       ; |universal_shift_register|Data_in[0]~corein ; combout          ;
+; |universal_shift_register|s1               ; |universal_shift_register|s1~corein         ; combout          ;
+; |universal_shift_register|s2               ; |universal_shift_register|s2~corein         ; combout          ;
+; |universal_shift_register|Data_in[1]       ; |universal_shift_register|Data_in[1]~corein ; combout          ;
+; |universal_shift_register|Data_in[3]       ; |universal_shift_register|Data_in[3]~corein ; combout          ;
+; |universal_shift_register|Data_in[4]       ; |universal_shift_register|Data_in[4]~corein ; combout          ;
+; |universal_shift_register|Data_in[5]       ; |universal_shift_register|Data_in[5]~corein ; combout          ;
+; |universal_shift_register|Data_in[6]       ; |universal_shift_register|Data_in[6]~corein ; combout          ;
+; |universal_shift_register|MSB_in           ; |universal_shift_register|MSB_in~corein     ; combout          ;
+; |universal_shift_register|Data_in[7]       ; |universal_shift_register|Data_in[7]~corein ; combout          ;
+; |universal_shift_register|clk~clkctrl      ; |universal_shift_register|clk~clkctrl       ; outclk           ;
++--------------------------------------------+---------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                              ;
++--------------------------------------+---------------------------------------------+------------------+
+; Node Name                            ; Output Port Name                            ; Output Port Type ;
++--------------------------------------+---------------------------------------------+------------------+
+; |universal_shift_register|LSB_in     ; |universal_shift_register|LSB_in~corein     ; combout          ;
+; |universal_shift_register|Data_in[2] ; |universal_shift_register|Data_in[2]~corein ; combout          ;
++--------------------------------------+---------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                              ;
++--------------------------------------+---------------------------------------------+------------------+
+; Node Name                            ; Output Port Name                            ; Output Port Type ;
++--------------------------------------+---------------------------------------------+------------------+
+; |universal_shift_register|LSB_in     ; |universal_shift_register|LSB_in~corein     ; combout          ;
+; |universal_shift_register|Data_in[2] ; |universal_shift_register|Data_in[2]~corein ; combout          ;
++--------------------------------------+---------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Jan 12 20:35:08 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off universal_shift_register -c universal_shift_register
+Info: Using vector source file "D:/OneDrive/106-1/VLSI/Hw5/code/universal_shift_register.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      96.23 %
+Info: Number of transitions in simulation is 582
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 179 megabytes
+    Info: Processing ended: Fri Jan 12 20:35:09 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

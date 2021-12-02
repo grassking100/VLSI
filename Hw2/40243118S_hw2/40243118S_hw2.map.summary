@@ -1,0 +1,15 @@
+Analysis & Synthesis Status : Successful - Fri Nov 24 22:37:33 2017
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : 40243118S_hw2
+Top-level Entity Name : hw2
+Family : Stratix II
+Logic utilization : N/A
+    Combinational ALUTs : 3
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 5
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 9-bit elements : 0
+Total PLLs : 0
+Total DLLs : 0

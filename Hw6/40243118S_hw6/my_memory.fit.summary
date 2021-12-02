@@ -1,0 +1,17 @@
+Fitter Status : Successful - Fri Jan 12 23:11:53 2018
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : my_memory
+Top-level Entity Name : memory
+Family : Stratix II
+Device : EP2S15F484C3
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 36 / 12,480 ( < 1 % )
+    Dedicated logic registers : 29 / 12,480 ( < 1 % )
+Total registers : 29
+Total pins : 78 / 343 ( 23 % )
+Total virtual pins : 0
+Total block memory bits : 16,384 / 419,328 ( 4 % )
+DSP block 9-bit elements : 0 / 96 ( 0 % )
+Total PLLs : 0 / 6 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )
