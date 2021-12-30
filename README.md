@@ -3,12 +3,12 @@ This repository holds the VHDL codes and Verilog codes of the course named VLSI.
 
 ![fgpa_1](https://user-images.githubusercontent.com/16127951/144873251-61ce13d2-64c3-4389-83e4-41943532eb66.png)
 \
-**Figure 1.** Finite state machine VHDL visualization 
+**Figure 1.** Multiplexer VHDL visualization 
 \
 \
 ![fgpa_2](https://user-images.githubusercontent.com/16127951/144873622-7406c70c-fa75-4ec4-b6ab-5b831c849136.png)
 \
-**Figure 2.** Finite state machine states visualization 
+**Figure 2.** Arithmatic visualization 
 \
 \
 ![fgpa_3](https://user-images.githubusercontent.com/16127951/144873008-fbb37224-9fb3-47ac-9851-f25a7d598141.png)
