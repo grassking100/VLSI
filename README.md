@@ -8,7 +8,7 @@ This repository holds the VHDL codes and Verilog codes of the course named VLSI.
 \
 ![fgpa_2](https://user-images.githubusercontent.com/16127951/144873622-7406c70c-fa75-4ec4-b6ab-5b831c849136.png)
 \
-**Figure 2.** Arithmatic visualization 
+**Figure 2.** Finite state machine states visualization 
 \
 \
 ![fgpa_3](https://user-images.githubusercontent.com/16127951/144873008-fbb37224-9fb3-47ac-9851-f25a7d598141.png)
